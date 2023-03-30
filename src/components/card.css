@@ -1,0 +1,54 @@
+.shape {
+  position: relative;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+}
+.shape::before {
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  top: -50px;
+  left: -50px;
+  border-radius: 50%;
+  animation: floating1 10s infinite ease-in-out;  
+}
+
+.shape::after {
+  position: absolute;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  right: 20px;
+  border-radius: 50%;
+  animation: floating2 10s infinite linear;  
+  
+}
+@keyframes floating1{
+  0%,100%{
+    top: 0px;
+    left: -50px;
+  }
+  25%{
+    top: 50px;
+    left: 50px;
+  }
+  50%{
+    top: 0px;
+    left: 50px;
+  }
+}
+@keyframes floating2{
+  0%,100%{
+    bottom: 0px;
+    right: 0px;
+  }
+  25%{
+    bottom: 50px;
+    right: 0px;
+  }
+  75%{
+    bottom: 0px;
+    right: 50px;
+  }
+}

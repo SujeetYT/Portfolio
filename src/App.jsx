@@ -1,6 +1,7 @@
 import routes from './routes'
 import { Navbar } from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         {routes.map(({path, Component}, idx)=><Route path={path} element={<Component/>} key={idx}/>)}
       </Routes>
+      <Footer/>
     </div>
   )
 }
