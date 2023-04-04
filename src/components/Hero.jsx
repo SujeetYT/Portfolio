@@ -1,11 +1,11 @@
 import React from 'react'
 import sujeet from "../assets/svgs/sujeet.svg"
 import { MdOutlineFileDownload } from "react-icons/md";
-import test from  "../assets/images/image 4.png"
+import test from  "../assets/images/css.png"
 
 const Hero = () => {
   return (
-    <section id='hero' className='w-full my-5 flex flex-col-reverse justify-around items-center md:flex-row'>
+    <section id='hero' className='w-full my-5 flex flex-col-reverse justify-around items-center md:flex-row z-10 relative'>
       <div className='px-5 flex flex-col justify-around items-center text-center'>
         <h3 className='text-3xl my-2 font-bold'>Hi, I'm</h3>
         <h1 className='text-6xl my-2 font-black text-orange2'>Sujeet Kumar</h1>

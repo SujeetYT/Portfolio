@@ -5,8 +5,7 @@ const ContactMe = () => {
   return (
     <>
       <div className='text-3xl font-bold underline'>
-        <Card/>
-        <Card/>
+        
       </div>
     </>
   )
